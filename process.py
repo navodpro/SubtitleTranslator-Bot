@@ -8,7 +8,7 @@ firebase = fb.FirebaseApplication(cred.DB_URL)
 def datefind():
     date = datetime.datetime.utcnow()
     date2 = date.replace(tzinfo=pytz.UTC)
-    date = date2.astimezone(pytz.timezone("Asia/Kolkata"))
+    date = date2.astimezone(pytz.timezone("Asia/Colombo"))
     date = str(date)
     date = date[0:10]
     today_date = int(date.replace("-", ""))
@@ -18,7 +18,7 @@ def datefind():
 today_date = datefind()
 date = datetime.datetime.utcnow()
 date2 = date.replace(tzinfo=pytz.UTC)
-date = date2.astimezone(pytz.timezone("Asia/Kolkata"))
+date = date2.astimezone(pytz.timezone("Asia/Colombo"))
 date = str(date)
 date = date[0:10]
 
