@@ -152,7 +152,7 @@ def data(client, callback_query):
         outfile = f"{subdir.replace('.srt', '')}_{lang}.srt"
         msg.delete()
         counts = count(message.chat.id)
-        if counts > 10:
+        if counts > 50:
             message.reply_text(err3)
             os.remove(subdir)
             update(message.chat.id, counts, "free")
